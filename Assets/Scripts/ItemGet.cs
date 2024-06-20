@@ -7,18 +7,6 @@ public class ItemGet : MonoBehaviour
     [SerializeField] AudioClip _sound = default;
     bool isGet;             // 獲得済みフラグ
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("Player"))
@@ -28,7 +16,7 @@ public class ItemGet : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(_sound, Camera.main.transform.position);
             }
-            Score.tempCoinNum++;
+            Score.tempCoinNum++;//Playerが接触した場合加算する＝＞これによりScoreスクリプトにも反映できる
             // プレイヤーが接触で獲得判定
             if (!isGet)
             {

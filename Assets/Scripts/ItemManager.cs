@@ -22,10 +22,10 @@ public class ItemManager : MonoBehaviour
 
     void CreateBlockObject()
     {
-        int row = 1;
-        int column = 4;
-        float xOffset = 0.5f;//XŽ²‚ÌŠÔŠu
-        float zOffset = 0.5f;//ZŽ²‚ÌŠÔŠu
+        int row = 18;
+        int column = 1;
+        float xOffset = 1f;//XŽ²‚ÌŠÔŠu
+        float zOffset = 5f;//ZŽ²‚ÌŠÔŠu
 
         for (int j = 0; j < row; j++)
         {

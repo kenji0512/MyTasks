@@ -7,7 +7,9 @@ public class Score : MonoBehaviour
     //public static Score Instance => _instance;
     //private Score() { }
     //ゲームに一つだけどこからも参照できるが、最初から最後までいる存在、MonoBehaviourは継承しないで使う
+    //ミタライさんメモ
 
+    /// <summary>別のところからでも参照できるようにする</summary>
     public static int tempCoinNum;
     public Text Scoretext;
 
